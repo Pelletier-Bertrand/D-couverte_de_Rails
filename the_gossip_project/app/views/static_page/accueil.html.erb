@@ -1,0 +1,10 @@
+<h1>Binvenue sur ma page Gossip! Bande de nazes!</h1> <br>
+<% @gossip.each do |gossip| %>
+<div class="card text-center" style="min-width: 576px; max-width: 575.98px">
+ <div class="card-header">
+   <h5 class="card-title"><%= gossip.author %></h5>
+   <p class="card-text"><%= gossip.content %></p>
+   <a href="gossip/<%=gossip.id%>" class="btn btn-success">Lien</a>
+ </div>
+</div>
+<%end%>
